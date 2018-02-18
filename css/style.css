@@ -185,17 +185,17 @@ img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
-  width: 180px;
   margin: 40px 0 0;
   padding: 0;
 
   list-style: none;
+}
+
+.slide__item:not(:first-child) {
+	margin-left: 36px;
 }
 
 .slide__link {
