@@ -14,6 +14,7 @@ html {
 }
 
 body {
+  min-width: 960px;
   margin: 0;
   padding: 0;
 
@@ -217,9 +218,15 @@ img {
   left: 0;
   overflow: visible;
 
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   margin: 0;
   width: 177px;
   height: 100%;
@@ -233,16 +240,16 @@ img {
   border-radius: 4px;
 
   clip: auto;
-  clip-path: none;
+  -webkit-clip-path: none;
+          clip-path: none;
 }
 
 .slide__link-download::after {
   content: "";
 
-  margin-left: 25px;
-
   width: 24px;
   height: 18px;
+  margin-left: 25px;
 
   background: url("../img/icon-download.png") 0 0 no-repeat;
 }
