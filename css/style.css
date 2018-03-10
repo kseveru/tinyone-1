@@ -189,6 +189,8 @@ img {
 }
 
 .slide__list {
+  position: relative;
+
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -207,6 +209,42 @@ img {
 
 .slide__link {
   display: block;
+}
+
+.slide__link:hover > .slide__link-download,
+.slide__link:focus > .slide__link-download {
+  top: 0;
+  left: 0;
+  overflow: visible;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  width: 177px;
+  height: 100%;
+
+  font-weight: bold;
+  color: #2d2d2d;
+  text-transform: uppercase;
+
+  background-color: #fcdb00;
+  border: 2px solid #000000;
+  border-radius: 4px;
+
+  clip: auto;
+  clip-path: none;
+}
+
+.slide__link-download::after {
+  content: "";
+
+  margin-left: 25px;
+
+  width: 24px;
+  height: 18px;
+
+  background: url("../img/icon-download.png") 0 0 no-repeat;
 }
 
 /* toggle
