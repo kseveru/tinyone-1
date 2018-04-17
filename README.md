@@ -1,4 +1,6 @@
 # tinyone-1
-Статичная верстка https://kseveru.github.io/tinyone-1/
+Статичная вёрстка (landing page)
+
+https://kseveru.github.io/tinyone-1/
 
 Макет: tinyone
